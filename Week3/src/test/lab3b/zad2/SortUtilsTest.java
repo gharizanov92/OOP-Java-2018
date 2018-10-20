@@ -1,6 +1,5 @@
 package test.lab3b.zad2;
 
-
 import main.lab3b.zad2.SortUtils;
 import test.util.TestUtil;
 

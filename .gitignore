@@ -1,2 +1,6 @@
-.idea
-*.iml
+# User-specific stuff
+**/.idea/workspace.xml
+**/.idea/vcs.xml
+
+**/out
+**/target
