@@ -1,9 +1,7 @@
 package enums;
 
-public enum TrafficLight {
-    RED(5), GREEN(5), YELLOW(1);
-
-    TrafficLight[] trafficLights = TrafficLight.values();
+public enum  TrafficLight {
+    RED(1), YELLOW(1), GREEN(1);
 
     private int time;
 
@@ -11,7 +9,7 @@ public enum TrafficLight {
         this.time = time;
     }
 
-    public int getTime() {
+    public int getDelay() {
         return time;
     }
 }

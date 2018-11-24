@@ -1,14 +1,23 @@
 package enums;
 
 public class TransferService {
-    public void transferMoney(final String iban, final int amount,
-                              final Bank fromBank, final Bank toBank) {
-        final String bicForm = fromBank.getBic();
-        final String bicTo = toBank.getBic();
-        /// ....
+    public void transfer(int sum, String iban,
+                         Bank fromBank, Bank toBank) {
 
-        if (Bank.DSK == Bank.FIB) {
+        if (fromBank == toBank) {
 
         }
+
+        // doTransfer
+        fromBank.getBic();
+        fromBank.getBin();
+        fromBank.getDescription();
+    }
+
+    public static void main(String[] args) {
+        final TransferService transferService = new TransferService();
+
+        transferService.transfer(100, "iban1",
+                Bank.DSK, Bank.FIB);
     }
 }

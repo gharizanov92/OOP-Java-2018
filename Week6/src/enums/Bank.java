@@ -1,22 +1,28 @@
 package enums;
 
 public enum Bank {
-    DSK("DSK bank", "BICDSK"),
-    FIB("FIB enums.Bank", "BICFIB");
+    DSK("DSK", "bin123", "4748123"),
+    FIB("Fibank", "bin123", "4748123");
 
+    private String description;
+    private String bin;
     private String bic;
-    private String name;
 
-    Bank(String bic, String name) {
+    Bank(String description, String bin, String bic) {
+        this.description = description;
+        this.bin = bin;
         this.bic = bic;
-        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getBin() {
+        return bin;
     }
 
     public String getBic() {
         return bic;
-    }
-
-    public String getName() {
-        return name;
     }
 }

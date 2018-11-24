@@ -1,16 +1,23 @@
 package main.lab3b.zad2;
 
+import java.util.Arrays;
+
 public class SortUtils {
+    private int[] arr;
     /**
      * Initializes the array
      */
-    public SortUtils(int[] a) {
+    public SortUtils(int[] arg) {
+        arr = Arrays.copyOf(arg, arg.length);
     }
 
     /**
      * Prints the array, example [1,2,3]
      */
     public void print() {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+        }
     }
 
     /**
