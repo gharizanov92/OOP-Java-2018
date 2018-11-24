@@ -6,6 +6,7 @@ import test.util.TestUtil;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.lang.reflect.Field;
+import java.net.Inet4Address;
 import java.util.Arrays;
 
 class SortUtilsTest {
@@ -13,7 +14,7 @@ class SortUtilsTest {
     private static final String INT_ARR_TYPE_NAME = "int[]";
     private static final Class<SortUtils> sortUtilsClass = SortUtils.class;
 
-    private void testInit() throws IllegalAccessException {
+    private void testInit() {
         // given
         final int[] arrayToInitializeWith = TestUtil.newRandomIntArray();
 
